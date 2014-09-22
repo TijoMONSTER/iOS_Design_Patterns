@@ -13,6 +13,10 @@ class AlbumView: UIView {
     var coverImage:UIImageView!
     var indicator:UIActivityIndicatorView!
 
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -26,10 +30,6 @@ class AlbumView: UIView {
         indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
         indicator.startAnimating()
         self.addSubview(indicator)
-    }
-
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     /*

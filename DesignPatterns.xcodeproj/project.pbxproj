@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8306C2019CFEACF0074E9F0 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8306C1F19CFEACF0074E9F0 /* PersistencyManager.swift */; };
 		E8649CF219CFB9C3009E9DB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649CF119CFB9C3009E9DB2 /* AppDelegate.swift */; };
 		E8649CF419CFB9C3009E9DB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649CF319CFB9C3009E9DB2 /* ViewController.swift */; };
 		E8649CF719CFB9C3009E9DB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8649CF519CFB9C3009E9DB2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		E8649D1219CFBA09009E9DB2 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1119CFBA09009E9DB2 /* HTTPClient.swift */; };
 		E8649D1419CFC16E009E9DB2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1319CFC16E009E9DB2 /* Album.swift */; };
 		E8649D1619CFC6ED009E9DB2 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */; };
+		E8649D1C19CFDDD0009E9DB2 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1B19CFDDD0009E9DB2 /* LibraryAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8306C1F19CFEACF0074E9F0 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		E8649CEC19CFB9C3009E9DB2 /* DesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8649CF019CFB9C3009E9DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8649CF119CFB9C3009E9DB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		E8649D1119CFBA09009E9DB2 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E8649D1319CFC16E009E9DB2 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		E8649D1B19CFDDD0009E9DB2 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,12 @@
 		E8649CEE19CFB9C3009E9DB2 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				E8649D1A19CFDDC1009E9DB2 /* API */,
+				E8649D1919CFD9C1009E9DB2 /* Controller */,
+				E8649D1819CFD9BF009E9DB2 /* View */,
+				E8649D1719CFD9BB009E9DB2 /* Model */,
 				E8649D1119CFBA09009E9DB2 /* HTTPClient.swift */,
 				E8649CF119CFB9C3009E9DB2 /* AppDelegate.swift */,
-				E8649CF319CFB9C3009E9DB2 /* ViewController.swift */,
-				E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */,
-				E8649D1319CFC16E009E9DB2 /* Album.swift */,
 				E8649CF519CFB9C3009E9DB2 /* Main.storyboard */,
 				E8649CF819CFB9C3009E9DB2 /* Images.xcassets */,
 				E8649CFA19CFB9C4009E9DB2 /* LaunchScreen.xib */,
@@ -119,6 +124,39 @@
 				E8649D0619CFB9C4009E9DB2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8649D1719CFD9BB009E9DB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8649D1319CFC16E009E9DB2 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E8649D1819CFD9BF009E9DB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E8649D1919CFD9C1009E9DB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8649CF319CFB9C3009E9DB2 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E8649D1A19CFDDC1009E9DB2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E8649D1B19CFDDD0009E9DB2 /* LibraryAPI.swift */,
+				E8306C1F19CFEACF0074E9F0 /* PersistencyManager.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +261,11 @@
 			files = (
 				E8649CF419CFB9C3009E9DB2 /* ViewController.swift in Sources */,
 				E8649CF219CFB9C3009E9DB2 /* AppDelegate.swift in Sources */,
+				E8649D1C19CFDDD0009E9DB2 /* LibraryAPI.swift in Sources */,
 				E8649D1219CFBA09009E9DB2 /* HTTPClient.swift in Sources */,
 				E8649D1619CFC6ED009E9DB2 /* AlbumView.swift in Sources */,
 				E8649D1419CFC16E009E9DB2 /* Album.swift in Sources */,
+				E8306C2019CFEACF0074E9F0 /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +457,7 @@
 				E8649D0D19CFB9C4009E9DB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8649D0E19CFB9C4009E9DB2 /* Build configuration list for PBXNativeTarget "DesignPatternsTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +466,7 @@
 				E8649D1019CFB9C4009E9DB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
