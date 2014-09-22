@@ -13,6 +13,9 @@
 		E8649CF919CFB9C3009E9DB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8649CF819CFB9C3009E9DB2 /* Images.xcassets */; };
 		E8649CFC19CFB9C4009E9DB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8649CFA19CFB9C4009E9DB2 /* LaunchScreen.xib */; };
 		E8649D0819CFB9C4009E9DB2 /* DesignPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D0719CFB9C4009E9DB2 /* DesignPatternsTests.swift */; };
+		E8649D1219CFBA09009E9DB2 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1119CFBA09009E9DB2 /* HTTPClient.swift */; };
+		E8649D1419CFC16E009E9DB2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1319CFC16E009E9DB2 /* Album.swift */; };
+		E8649D1619CFC6ED009E9DB2 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		E8649D0119CFB9C4009E9DB2 /* DesignPatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8649D0619CFB9C4009E9DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8649D0719CFB9C4009E9DB2 /* DesignPatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsTests.swift; sourceTree = "<group>"; };
+		E8649D1119CFBA09009E9DB2 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E8649D1319CFC16E009E9DB2 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,11 @@
 		E8649CEE19CFB9C3009E9DB2 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				E8649D1119CFBA09009E9DB2 /* HTTPClient.swift */,
 				E8649CF119CFB9C3009E9DB2 /* AppDelegate.swift */,
 				E8649CF319CFB9C3009E9DB2 /* ViewController.swift */,
+				E8649D1519CFC6ED009E9DB2 /* AlbumView.swift */,
+				E8649D1319CFC16E009E9DB2 /* Album.swift */,
 				E8649CF519CFB9C3009E9DB2 /* Main.storyboard */,
 				E8649CF819CFB9C3009E9DB2 /* Images.xcassets */,
 				E8649CFA19CFB9C4009E9DB2 /* LaunchScreen.xib */,
@@ -214,6 +223,9 @@
 			files = (
 				E8649CF419CFB9C3009E9DB2 /* ViewController.swift in Sources */,
 				E8649CF219CFB9C3009E9DB2 /* AppDelegate.swift in Sources */,
+				E8649D1219CFBA09009E9DB2 /* HTTPClient.swift in Sources */,
+				E8649D1619CFC6ED009E9DB2 /* AlbumView.swift in Sources */,
+				E8649D1419CFC16E009E9DB2 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
